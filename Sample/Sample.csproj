@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="PDFNetDotNetCore, Version=6.11.0.0, Culture=neutral, PublicKeyToken=null">
+            <HintPath>..\lib\PDFNetDotNetCore.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="../lib/libPDFNetC.dylib">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Pack>true</Pack>
+            <PackagePath>runtimes/osx-x64/native</PackagePath>
+        </Content>
+        <Content Include="../lib/libPDFNetC.so">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Pack>true</Pack>
+            <PackagePath>runtimes/linux-x64/native</PackagePath>
+        </Content>
+    </ItemGroup>
+
+</Project>
