@@ -22,6 +22,11 @@
             <Pack>true</Pack>
             <PackagePath>runtimes/linux-x64/native</PackagePath>
         </Content>
+        <Content Include="../lib/PDFNetC.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Pack>true</Pack>
+            <PackagePath>runtimes/win-x64/native</PackagePath>
+        </Content>
     </ItemGroup>
 
 </Project>
